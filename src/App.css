@@ -1,0 +1,27 @@
+.App{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+.main{
+    flex-grow: 1;
+}
+
+
+.color-naranja {
+    background-color: #EA5E2D;
+}
+
+.color-celeste{
+    background-color:#AFCEE2 ;
+}
+
+.color-gris{
+    background-color:#47596D ;
+}
+
+.color-negro{
+    background-color: #424149;
+}

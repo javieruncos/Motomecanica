@@ -11,16 +11,16 @@ const Home = () => {
       <section>
         <Portada></Portada>
       </section>
-      <section className="container px-5 mx-auto my-10">
+      <section className="fondo-gradient">
         <Servicios></Servicios>
       </section>
-      <section className="container px-5 mx-auto my-10">
+      <section className="fondo-gradient">
         <BannerServicio></BannerServicio>
       </section>
-      <section className="container px-5 mx-auto my-10">
+      <section className="fondo-gradient">
         <ServiciosCards></ServiciosCards>
       </section>
-      <section className="container px-5 mx-auto my-10">
+      <section className="fondo-gradient">
         <Testimonios></Testimonios>
       </section>
     </div>

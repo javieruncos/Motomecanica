@@ -1,0 +1,35 @@
+.App{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+     background-image: linear-gradient(45deg, #a8acb8, #b6bac6, #f6f9fe, #f6f9fe);
+}
+
+.main{
+    flex-grow: 1;
+}
+
+
+.color-naranja {
+    background-color: #EA5E2D;
+}
+
+.text-naranja {
+    color: #EA5E2D;
+}
+
+.color-celeste{
+    background-color:#AFCEE2 ;
+}
+
+.color-gris{
+    background-color:#47596D ;
+}
+
+.color-negro{
+    background-color: #424149;
+}
+
+.fondo-gradient{
+     background-image: linear-gradient(45deg, #a8acb8, #b6bac6, #f6f9fe, #f6f9fe);
+}

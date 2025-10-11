@@ -2,7 +2,7 @@ import React from 'react';
 
 const ServiciosCards = () => {
     return (
-        <div className='h-[500px] bg-amber-300'>
+        <div className='h-[500px] fondo-gradient'>
             
         </div>
     );

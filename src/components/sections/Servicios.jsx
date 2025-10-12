@@ -26,7 +26,7 @@ const Servicios = () => {
   return (
     <div className="h-[600px] pt-30 fondo-gradient ">
       <div className="text-center">
-        <h2 className="text-5xl">Nuestros Servicios</h2>
+        <h2 className="text-5xl font-bold">Nuestros Servicios</h2>
         <p className="text-2xl">
           Todo lo que tu moto necesita en un solo lugar
         </p>

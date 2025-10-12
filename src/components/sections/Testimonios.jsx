@@ -32,7 +32,7 @@ const Testimonios = () => {
       <div className="absolute top-0 left-0 bg-black/90 w-full h-full">
         <div className=" py-26 text-white  container mx-auto px-15">
           <div className="container mx-auto px-6">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 ">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 titulo">
               Opiniones de nuestros clientes
             </h2>
 
@@ -48,7 +48,7 @@ const Testimonios = () => {
                       alt={item.nombre}
                       className="w-14 h-14 rounded-full border-2 border-[#f6f8f8] mr-4"
                     />
-                    <h3 className="text-lg font-semibold">{item.nombre}</h3>
+                    <h3 className="text-lg font-semibold text-naranja">{item.nombre}</h3>
                   </div>
                   <p className="text-gray-300 italic">“{item.comentario}”</p>
                 </div>

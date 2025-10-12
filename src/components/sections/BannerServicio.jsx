@@ -7,7 +7,7 @@ const BannerServicio = () => {
       <div className="absolute top-0 left-0 bg-black/90 w-full h-full">
       <div className="grid grid-cols-2 gap-4 container mx-auto">
         <div className="text-white container mx-auto py-24 px-10 ">
-          <h3 className="text-4xl">
+          <h3 className="text-4xl titulo">
             Lorem ipsum dolor sit amet consectetur
             <span className="text-naranja"> adipisicing</span>.
           </h3>
@@ -21,7 +21,7 @@ const BannerServicio = () => {
           <div className="grid grid-cols-2 mt-5 gap-4">
             <div className="">
               <div className="flex gap-2 items-center">
-                <h4 className="text-2xl text-naranja">Mecanica en general</h4>
+                <h4 className="text-2xl text-naranja titulo">Mecanica en general</h4>
               </div>
               <div className="mt-2 w-full">
                 <p>
@@ -32,7 +32,7 @@ const BannerServicio = () => {
             </div>
             <div className="">
               <div className="flex gap-2 items-center">
-                <h4 className="text-2xl text-naranja">Mecanica en general</h4>
+                <h4 className="text-2xl text-naranja titulo">Mecanica en general</h4>
               </div>
               <div className="mt-2 w-full">
                 <p>
@@ -43,7 +43,7 @@ const BannerServicio = () => {
             </div>
             <div className="">
               <div className="flex gap-2 items-center">
-                <h4 className="text-2xl text-naranja">Mecanica en general</h4>
+                <h4 className="text-2xl text-naranja titulo">Mecanica en general</h4>
               </div>
               <div className="mt-2 w-full">
                 <p>
@@ -52,9 +52,9 @@ const BannerServicio = () => {
                 </p>
               </div>
             </div>
-            <div className="">
+            <div className="">  
               <div className="flex gap-2 items-center">
-                <h4 className="text-2xl text-naranja">Mecanica en general</h4>
+                <h4 className="text-2xl text-naranja titulo">Mecanica en general</h4>
               </div>
               <div className="mt-2 w-full">
                 <p>

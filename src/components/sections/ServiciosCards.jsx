@@ -4,7 +4,7 @@ const ServiciosCards = () => {
   return (
     <div className="h-auto fondo-gradient">
       <div className="text-center pt-30  flex flex-col gap-2">
-        <h3 className="text-5xl font-bold">Servicios destacados</h3>
+        <h3 className="text-5xl font-bold titulo">Servicios destacados</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, iusto!
         </p>
@@ -20,7 +20,7 @@ const ServiciosCards = () => {
               />
             </div>
             <div className="px-5 pt-5 pb-10 bg-[#ffffff]">
-              <h4 className="text-2xl font-bold">Mecanica General</h4>
+              <h4 className="text-2xl font-bold titulo">Mecanica General</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
                 facere. Sit, consequuntur.
@@ -41,7 +41,7 @@ const ServiciosCards = () => {
               />
             </div>
             <div className="px-5 pt-5 pb-10 bg-[#ffffff]">
-              <h4 className="text-2xl font-bold">Services Completo</h4>
+              <h4 className="text-2xl font-bold titulo">Services Completo</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
                 facere. Sit, consequuntur.
@@ -62,7 +62,7 @@ const ServiciosCards = () => {
               />
             </div>
             <div className="px-5 pt-5 pb-10 bg-[#ffffff]">
-              <h4 className="text-2xl font-bold">Electricidad General</h4>
+              <h4 className="text-2xl font-bold titulo">Electricidad General</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
                 facere. Sit, consequuntur.
@@ -81,7 +81,7 @@ const ServiciosCards = () => {
           <div className="h-[300px]  color-naranja  px-5 grid grid-cols-2 rounded-2xl">
             <div className="pt-5 flex flex-col items-center justify-center">
               <div>
-                <h5 className="text-2xl font-bold text-white">
+                <h5 className="text-2xl font-bold text-white titulo">
                   Venta de Respuestos
                 </h5>
                 <p className="text-white ">
@@ -104,7 +104,7 @@ const ServiciosCards = () => {
           <div className="h-[300px]  bg-black  px-5 grid grid-cols-2 rounded-2xl">
             <div className="pt-5 flex flex-col items-center justify-center">
               <div>
-                <h5 className="text-2xl font-bold text-naranja">
+                <h5 className="text-2xl font-bold text-naranja titulo">
                   Servicio completos
                 </h5>
                 <p className="text-white ">

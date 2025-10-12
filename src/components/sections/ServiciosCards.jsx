@@ -19,7 +19,7 @@ const ServiciosCards = () => {
                 className="h-full w-full"
               />
             </div>
-            <div className="px-3 pt-5 pb-10 bg-[#e4e6e5]">
+            <div className="px-5 pt-5 pb-10 bg-[#ffffff]">
               <h4 className="text-2xl font-bold">Mecanica General</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
@@ -40,7 +40,7 @@ const ServiciosCards = () => {
                 className="h-full w-full"
               />
             </div>
-            <div className="px-3 pt-5 pb-10 bg-white">
+            <div className="px-5 pt-5 pb-10 bg-[#ffffff]">
               <h4 className="text-2xl font-bold">Services Completo</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
@@ -61,7 +61,7 @@ const ServiciosCards = () => {
                 className="h-full w-full"
               />
             </div>
-            <div className="px-3 pt-5 pb-10 bg-[#e4e6e5]">
+            <div className="px-5 pt-5 pb-10 bg-[#ffffff]">
               <h4 className="text-2xl font-bold">Electricidad General</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
@@ -78,10 +78,12 @@ const ServiciosCards = () => {
       </div>
       <div className="container mx-auto px-15 pb-30">
         <div className="grid grid-cols-2 gap-4">
-          <div className="h-[300px]  color-naranja  px-5 grid grid-cols-2">
+          <div className="h-[300px]  color-naranja  px-5 grid grid-cols-2 rounded-2xl">
             <div className="pt-5 flex flex-col items-center justify-center">
               <div>
-                <h5 className="text-2xl font-bold text-white">Venta de Respuestos</h5>
+                <h5 className="text-2xl font-bold text-white">
+                  Venta de Respuestos
+                </h5>
                 <p className="text-white ">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Sapiente,
@@ -99,10 +101,12 @@ const ServiciosCards = () => {
               />
             </div>
           </div>
-             <div className="h-[300px]  bg-black  px-5 grid grid-cols-2">
+          <div className="h-[300px]  bg-black  px-5 grid grid-cols-2 rounded-2xl">
             <div className="pt-5 flex flex-col items-center justify-center">
               <div>
-                <h5 className="text-2xl font-bold text-naranja">Servicio completos</h5>
+                <h5 className="text-2xl font-bold text-naranja">
+                  Servicio completos
+                </h5>
                 <p className="text-white ">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Sapiente,

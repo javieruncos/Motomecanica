@@ -2,8 +2,10 @@ import React from "react";
 
 const BannerServicio = () => {
   return (
-    <div className="h-[600px] bg-black">
-      <div className="grid grid-cols-2 gap-4 container mx-auto ">
+    <div className="h-[600px] bg-black relative">
+      <img src="https://images.pexels.com/photos/207555/pexels-photo-207555.jpeg" alt="motocicleta" className="w-full h-full object-cover" />
+      <div className="absolute top-0 left-0 bg-black/90 w-full h-full">
+      <div className="grid grid-cols-2 gap-4 container mx-auto">
         <div className="text-white container mx-auto py-24 px-10 ">
           <h3 className="text-4xl">
             Lorem ipsum dolor sit amet consectetur
@@ -65,8 +67,9 @@ const BannerServicio = () => {
         </div>
         <div className="text-white container mx-auto py-24 px-10 ">
            <img src="https://media.istockphoto.com/id/2083542243/es/foto/mec%C3%A1nico-revisando-el-motor-de-una-motocicleta-en-un-taller-de-reparaci%C3%B3n.jpg?b=1&s=612x612&w=0&k=20&c=ImiPAgk7AVhKVggmLB6ANPF-lQjJ9L4-kokyV3Jbkj8=" alt="mecanico"
-           className="w-full h-full" />
+           className="w-full h-full object-cover" />
         </div>
+      </div>
       </div>
     </div>
   );

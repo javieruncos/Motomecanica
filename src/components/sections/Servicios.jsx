@@ -1,21 +1,22 @@
 import React from "react";
 
 const Servicios = () => {
-  
   return (
-    <div className="h-[600px] pt-30 fondo-gradient">
-      <div className="text-center">
-        <h2 className="text-5xl font-bold titulo">Nuestros Servicios</h2>
-        <p className="text-2xl">
+    <div className="h-auto md:h-[770px] lg:h-[600px] py-20  md:pt-30 fondo-gradient md:pb-0 lg:pb-0">
+      <div className="text-center px-4">
+        <h2 className="text-3xl md:text-5xl font-bold titulo">
+          Nuestros Servicios
+        </h2>
+        <p className="text-lg md:text-2xl">
           Todo lo que tu moto necesita en un solo lugar
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-15 container px-10 mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 md:mt-15 container px-6 md:px-10 mx-auto">
         {/* Servicio 1 */}
         <div className="p-6 color-negro rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300">
-          <div className="text-5xl mb-4 text-naranja  text-center">
-           <i className="bi bi-gear-fill"></i>
+          <div className="text-5xl mb-4 text-naranja text-center">
+            <i className="bi bi-gear-fill"></i>
           </div>
           <h3 className="text-xl font-semibold mb-2 text-center text-white">
             Mecánica General

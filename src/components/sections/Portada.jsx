@@ -3,20 +3,28 @@ import React from "react";
 const Portada = () => {
   return (
     <div className="portada h-[600px] relative">
-      <img src="https://images.pexels.com/photos/207555/pexels-photo-207555.jpeg" alt="motocicleta" className="w-full h-full object-cover" />
-      <div className="absolute w-full h-full top-0 left-o bg-black/85 flex  flex-col items-center justify-center">
-        <h1 className="text-7xl font-bold text-white mb-4 titulo">
+      <img
+        src="https://images.pexels.com/photos/207555/pexels-photo-207555.jpeg"
+        alt="motocicleta"
+        className="w-full h-full object-cover"
+      />
+      <div className="absolute w-full h-full top-0 left-0 bg-black/85 flex flex-col items-center justify-center px-4 text-center md:text-left">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 titulo">
           Servicios de motomecanica
         </h1>
-        <div className="w-[600px]">
-          <p className="text-lg text-center text-white">
+
+        <div className="w-full md:w-[600px]">
+          <p className="text-base md:text-lg text-center text-white">
             Ofrecemos una amplia gama de servicios de motomecanica para
             satisfacer las necesidades de nuestros clientes. las necesidades de
             nuestros clientes.
           </p>
         </div>
+
         <div className="mt-10">
-            <button className="py-4 px-14 color-naranja text-white">consulta presupuesto</button>
+          <button className="py-4 px-10 md:px-14 color-naranja text-white">
+            consulta presupuesto
+          </button>
         </div>
       </div>
     </div>

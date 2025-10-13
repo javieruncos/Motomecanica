@@ -32,7 +32,7 @@ const Testimonios = () => {
       <div className="absolute top-0 left-0 bg-black/90 w-full h-full">
         <div className="py-16 sm:py-20 md:py-26 text-white container mx-auto px-4 sm:px-6 md:px-15">
           <div className="container mx-auto px-2 sm:px-4 md:px-6">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-10 md:mb-12 titulo">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-7xl font-bold text-center mb-8 sm:mb-10 md:mb-12 titulo">
               Opiniones de nuestros clientes
             </h2>
 

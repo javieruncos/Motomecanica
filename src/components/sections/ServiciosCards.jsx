@@ -4,7 +4,7 @@ const ServiciosCards = () => {
   return (
     <div className="h-auto fondo-gradient">
       <div className="text-center pt-12 sm:pt-16 md:pt-20 flex flex-col gap-2">
-        <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold titulo">
+        <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold titulo">
           Servicios destacados
         </h3>
         <p className="text-sm sm:text-base md:text-lg px-4 sm:px-10 md:px-0">

@@ -65,7 +65,7 @@ const BannerServicio = () => {
             </div>
           </div>
         </div>
-        <div className="text-white container mx-auto py-24 md:py-0 px-10 lg:py-10">
+        <div className="text-white container mx-auto py-24 md:py-0 px-10 lg:py-20">
            <img src="https://media.istockphoto.com/id/2083542243/es/foto/mec%C3%A1nico-revisando-el-motor-de-una-motocicleta-en-un-taller-de-reparaci%C3%B3n.jpg?b=1&s=612x612&w=0&k=20&c=ImiPAgk7AVhKVggmLB6ANPF-lQjJ9L4-kokyV3Jbkj8=" alt="mecanico"
            className="w-full h-full object-cover hidden md:block" />
         </div>

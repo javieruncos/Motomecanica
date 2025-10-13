@@ -4,7 +4,7 @@ const Servicios = () => {
   return (
     <div className="h-auto md:h-[770px] lg:h-[600px] py-20  md:pt-30 fondo-gradient md:pb-0 lg:pb-0">
       <div className="text-center px-4">
-        <h2 className="text-3xl md:text-5xl font-bold titulo">
+        <h2 className="text-3xl md:text-5xl lg:text-7xl font-bold titulo">
           Nuestros Servicios
         </h2>
         <p className="text-lg md:text-2xl">

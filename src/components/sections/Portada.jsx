@@ -5,7 +5,7 @@ const Portada = () => {
     <div className="portada h-[600px] relative">
       <img src="https://images.pexels.com/photos/207555/pexels-photo-207555.jpeg" alt="motocicleta" className="w-full h-full object-cover" />
       <div className="absolute w-full h-full top-0 left-o bg-black/85 flex  flex-col items-center justify-center">
-        <h1 className="text-7xl font-bold text-white mb-4">
+        <h1 className="text-7xl font-bold text-white mb-4 titulo">
           Servicios de motomecanica
         </h1>
         <div className="w-[600px]">

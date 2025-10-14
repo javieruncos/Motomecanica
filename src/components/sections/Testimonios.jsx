@@ -1,4 +1,4 @@
-import React from "react";
+import { motion } from "framer-motion";
 
 const Testimonios = () => {
   const comentarios = [
@@ -23,42 +23,43 @@ const Testimonios = () => {
   ];
 
   return (
-    <div className="h-[600px] md:h-[850px] lg:h-[550px] bg-[#191919] relative">
+    <div className="relative bg-[#191919] h-auto py-20 overflow-hidden">
       <img
         src="https://images.pexels.com/photos/207555/pexels-photo-207555.jpeg"
         alt="motocicleta"
-        className="w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover opacity-40"
       />
-      <div className="absolute top-0 left-0 bg-black/90 w-full h-full">
-        <div className="py-16 sm:py-20 md:py-26 text-white container mx-auto px-4 sm:px-6 md:px-15">
-          <div className="container mx-auto px-2 sm:px-4 md:px-6">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-7xl font-bold text-center mb-8 sm:mb-10 md:mb-12 titulo">
-              Opiniones de nuestros clientes
-            </h2>
+      <div className="absolute inset-0 bg-black/80" />
+      <div className="relative z-10 text-white container mx-auto px-4 sm:px-6 md:px-15">
+        <h2 className="text-3xl md:text-5xl lg:text-7xl font-bold text-center mb-12 titulo tracking-wide">
+          Opiniones de nuestros clientes
+        </h2>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10">
-              {comentarios.map((item, index) => (
-                <div
-                  key={index}
-                  className="color-negro p-4 sm:p-5 md:p-6 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300"
-                >
-                  <div className="flex items-center mb-3 sm:mb-4">
-                    <img
-                      src={item.imagen}
-                      alt={item.nombre}
-                      className="w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-[#f6f8f8] mr-3 sm:mr-4"
-                    />
-                    <h3 className="text-sm sm:text-base md:text-lg font-semibold text-naranja">
-                      {item.nombre}
-                    </h3>
-                  </div>
-                  <p className="text-xs sm:text-sm md:text-base text-gray-300 italic">
-                    “{item.comentario}”
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {comentarios.map((item, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 60 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: index * 0.2 }}
+              viewport={{ once: true }}
+              className="color-negro p-6 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300"
+            >
+              <div className="flex items-center mb-4">
+                <img
+                  src={item.imagen}
+                  alt={item.nombre}
+                  className="w-14 h-14 rounded-full border-2 border-[#f6f8f8] mr-4"
+                />
+                <h3 className="text-lg font-semibold text-naranja">
+                  {item.nombre}
+                </h3>
+              </div>
+              <p className="text-sm md:text-base text-gray-300 italic">
+                “{item.comentario}”
+              </p>
+            </motion.div>
+          ))}
         </div>
       </div>
     </div>

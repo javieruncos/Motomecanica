@@ -1,61 +1,60 @@
-import React from "react";
+import { motion } from "framer-motion";
 
 const Servicios = () => {
+  const servicios = [
+    {
+      icon: "bi bi-gear-fill",
+      titulo: "Mecánica General",
+      descripcion:
+        "Diagnóstico completo, reparación y mantenimiento integral de todo tipo de motos.",
+    },
+    {
+      icon: "bi bi-droplet-half",
+      titulo: "Cambio de Aceite y Filtros",
+      descripcion:
+        "Servicio rápido con productos originales y control de niveles para un mejor rendimiento.",
+    },
+    {
+      icon: "bi bi-lightning-charge-fill",
+      titulo: "Revisión Eléctrica",
+      descripcion:
+        "Chequeo del sistema eléctrico, luces, batería y arranque para garantizar tu seguridad.",
+    },
+  ];
+
   return (
-    <div className="h-auto md:h-[770px] lg:h-[600px] py-20  md:pt-30 fondo-gradient md:pb-0 lg:pb-0">
-      <div className="text-center px-4">
-        <h2 className="text-3xl md:text-5xl lg:text-7xl font-bold titulo">
+    <section className="py-20 md:py-28 fondo-gradient">
+      <div className="text-center px-6">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#191919] mb-4 titulo tracking-wide">
           Nuestros Servicios
         </h2>
-        <p className="text-lg md:text-2xl">
-          Todo lo que tu moto necesita en un solo lugar
+        <p className="text-lg md:text-xl text-gray-400">
+          Todo lo que tu moto necesita, en un solo lugar
         </p>
       </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 md:mt-15 container px-6 md:px-10 mx-auto">
-        {/* Servicio 1 */}
-        <div className="p-6 color-negro rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300">
-          <div className="text-5xl mb-4 text-naranja text-center">
-            <i className="bi bi-gear-fill"></i>
-          </div>
-          <h3 className="text-xl font-semibold mb-2 text-center text-white">
-            Mecánica General
-          </h3>
-          <p className="text-sm text-center text-gray-200">
-            Diagnóstico completo, reparación y mantenimiento integral de todo
-            tipo de motos.
-          </p>
-        </div>
-
-        {/* Servicio 2 */}
-        <div className="p-6 color-negro rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300">
-          <div className="text-5xl mb-4 text-naranja text-center">
-            <i className="bi bi-droplet-half"></i>
-          </div>
-          <h3 className="text-xl font-semibold mb-2 text-center text-white">
-            Cambio de Aceite y Filtros
-          </h3>
-          <p className="text-sm text-center text-gray-200">
-            Servicio rápido con productos originales y control de niveles para
-            un mejor rendimiento.
-          </p>
-        </div>
-
-        {/* Servicio 3 */}
-        <div className="p-6 color-negro rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300">
-          <div className="text-5xl mb-4 text-naranja text-center">
-            <i className="bi bi-lightning-charge-fill"></i>
-          </div>
-          <h3 className="text-xl font-semibold mb-2 text-center text-white">
-            Revisión Eléctrica
-          </h3>
-          <p className="text-sm text-center text-gray-200">
-            Chequeo del sistema eléctrico, luces, batería y arranque para
-            garantizar tu seguridad.
-          </p>
-        </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-14 container mx-auto px-6 md:px-10">
+        {servicios.map((servicio, index) => (
+          <motion.div
+            key={index}
+            className="p-8 bg-black/60 backdrop-blur-md border border-white/10 rounded-2xl shadow-xl hover:shadow-orange-500/20 transition-all duration-300 hover:-translate-y-2"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.2 }}
+            viewport={{ once: true }}
+          >
+            <div className="text-6xl mb-6 text-orange-500 text-center drop-shadow-[0_0_8px_rgba(255,120,0,0.4)]">
+              <i className={servicio.icon}></i>
+            </div>
+            <h3 className="text-2xl font-semibold mb-3 text-center text-white">
+              {servicio.titulo}
+            </h3>
+            <p className="text-base text-center text-gray-300 leading-relaxed">
+              {servicio.descripcion}
+            </p>
+          </motion.div>
+        ))}
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,33 +1,51 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Portada = () => {
   return (
-    <div className="portada h-[600px] relative">
+    <section className="relative h-[600px] md:h-[700px] bg-black overflow-hidden">
       <img
         src="https://images.pexels.com/photos/207555/pexels-photo-207555.jpeg"
         alt="motocicleta"
-        className="w-full h-full object-cover"
+        className="w-full h-full object-cover opacity-70"
       />
-      <div className="absolute w-full h-full top-0 left-0 bg-black/85 flex flex-col items-center justify-center px-4 text-center md:text-left">
-        <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold text-white mb-4 titulo">
-          Servicios de motomecanica
-        </h1>
 
-        <div className="w-full md:w-[600px]">
-          <p className="text-center md:text-lg  text-white">
-            Ofrecemos una amplia gama de servicios de motomecanica para
-            satisfacer las necesidades de nuestros clientes. las necesidades de
-            nuestros clientes.
-          </p>
-        </div>
+      <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/70 to-black/90"></div>
+      <div className="absolute inset-0 flex flex-col items-center md:items-center justify-center text-white px-6 md:px-20">
+        <motion.h1
+          className="text-4xl md:text-5xl lg:text-7xl text-center  font-extrabold mb-4 leading-tight"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          Cuidamos tu moto como si fuera nuestra
+        </motion.h1>
 
-        <div className="mt-10">
-          <button className="py-4 px-10 md:px-14 color-naranja text-white">
-            consulta presupuesto
-          </button>
-        </div>
+        <motion.p
+          className="w-full md:w-[600px] text-center  text-lg text-gray-200 "
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.2 }}
+        >
+          Mantenimiento, reparación y service completo con repuestos originales.
+          Más de 10 años brindando confianza a cada cliente.
+        </motion.p>
+
+        <motion.div
+          className="mt-10 flex justify-center  items-center md:justify-center md:text-center "
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.4 }}
+        >
+          <a
+            href="#contacto"
+            className="inline-block  md:text-center bg-orange-600 hover:bg-orange-500 transition-all duration-300 text-white font-semibold py-4 px-10 rounded-full shadow-lg shadow-orange-600/40 uppercase tracking-wider"
+          >
+            Solicitar presupuesto
+          </a>
+        </motion.div>
       </div>
-    </div>
+    </section>
   );
 };
 

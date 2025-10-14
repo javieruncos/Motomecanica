@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import electricoMoto from "../../assets/img/electricoMoto.webp";
-import mecanico from "../../assets/img/mecanicoPage.jpg";
-import reparaciones  from "../../assets/img/reparacionMoto.jpg";
+import mecanico from "../../assets/img/mecanicoPage.webp";
+import reparaciones  from "../../assets/img/reparacionMoto.webp";
+import repuestos from "../../assets/img/repuestos.webp";
+import casco from "../../assets/img/casco.webp";
 
 const ServiciosCards = () => {
   const servicios = [
@@ -123,7 +125,7 @@ const ServiciosCards = () => {
             </a>
           </div>
           <img
-            src="https://i0.wp.com/www.vectorizando.com/wp-content/uploads/2022/08/Vector-Motorcycle-Spares-Concept-Convertido-847061d9.png?fit=500%2C500&ssl=1"
+            src={repuestos}
             alt="Repuestos de moto"
             className="w-40 md:w-56 mt-6 lg:mt-0"
           />
@@ -156,7 +158,7 @@ const ServiciosCards = () => {
             </a>
           </div>
           <img
-            src="https://nrmotoco.com/wp-content/uploads/2022/08/RXT-726X-Warrior-Helmet-Left-Front-Angle-Visor-Up-300x300-1.png"
+            src={casco}
             alt="Service express"
             className="w-40 md:w-56 mt-6 lg:mt-0"
           />

@@ -1,35 +1,71 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Portada from "../components/sections/Portada";
 import Servicios from "../components/sections/Servicios";
-import BannerServicio from "../components/sections/BannerServicio";
-import ServiciosCards from "../components/sections/ServiciosCards";
-import Testimonios from "../components/sections/Testimonios";
 import Contacto from "../components/sections/Contacto";
 import Preguntas from "../components/sections/Preguntas";
+
+const BannerServicioLazy = React.lazy(() =>
+  import("../components/sections/BannerServicio")
+);
+const ServiciosCardsLazy = React.lazy(() =>
+  import("../components/sections/ServiciosCards")
+);
+const TestimoniosLazy = React.lazy(() =>
+  import("../components/sections/Testimonios")
+);
 
 const Home = () => {
   return (
     <div className="main">
       <section>
-        <Portada></Portada>
+        <Portada />
       </section>
-      <section className="fondo-gradient scroll-smooth scroll-mt-24" id="servicios">
-        <Servicios></Servicios>
+      <section
+        className="fondo-gradient scroll-smooth scroll-mt-24"
+        id="servicios"
+      >
+        <Servicios />
       </section>
-      <section className="fondo-gradient">
-        <BannerServicio></BannerServicio>
+      <Suspense
+        fallback={
+          <div className="text-center py-20 text-white">Cargando Banner...</div>
+        }
+      >
+        <section className="fondo-gradient">
+          <BannerServicioLazy />
+        </section>
+      </Suspense>
+      <Suspense
+        fallback={
+          <div className="text-center py-20 text-white">
+            Cargando Servicios Destacados...
+          </div>
+        }
+      >
+        <section className="fondo-gradient">
+          <ServiciosCardsLazy />
+        </section>
+      </Suspense>
+      <Suspense
+        fallback={
+          <div className="text-center py-20 text-white">
+            Cargando Testimonios...
+          </div>
+        }
+      >
+        <section className="fondo-gradient">
+          <TestimoniosLazy />
+        </section>
+      </Suspense>
+      <section
+        className="fondo-gradient scroll-smooth scroll-mt-24"
+        id="contacto"
+      >
+        <Contacto />
       </section>
-      <section className="fondo-gradient">
-        <ServiciosCards></ServiciosCards>
-      </section>
-      <section className="fondo-gradient">
-        <Testimonios></Testimonios>
-      </section>
-      <section className="fondo-gradient scroll-smooth scroll-mt-24" id="contacto">
-        <Contacto></Contacto>
-      </section>
+
       <section>
-        <Preguntas></Preguntas>
+        <Preguntas />
       </section>
     </div>
   );

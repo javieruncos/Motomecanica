@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import moto from "../../assets/img/moto.jpeg";
+import moto from "../../assets/img/moto.webp";
 
 const Testimonios = () => {
   const comentarios = [

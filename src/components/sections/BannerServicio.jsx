@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import mecanico from "../../assets/img/mecanicoPage.jpg";
+import mecanico from "../../assets/img/mecanicoPage.webp";
 
 const BannerServicio = () => {
   const servicios = [

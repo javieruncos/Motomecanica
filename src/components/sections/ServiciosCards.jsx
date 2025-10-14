@@ -1,21 +1,39 @@
 import { motion } from "framer-motion";
+import electricoMoto from "../../assets/img/electricoMoto.webp";
+import mecanico from "../../assets/img/mecanicoPage.jpg";
+import reparaciones  from "../../assets/img/reparacionMoto.jpg";
 
 const ServiciosCards = () => {
   const servicios = [
     {
       titulo: "Mecánica General",
       desc: "Reparación completa del motor, frenos, embrague y transmisión. Usamos herramientas de diagnóstico precisas.",
-      img: "https://media.istockphoto.com/id/2083542243/es/foto/mec%C3%A1nico-revisando-el-motor-de-una-motocicleta-en-un-taller-de-reparaci%C3%B3n.jpg?b=1&s=612x612&w=0&k=20&c=ImiPAgk7AVhKVggmLB6ANPF-lQjJ9L4-kokyV3Jbkj8=",
+      img: {
+        electricoMoto: {
+          src: mecanico,
+          alt: "electricidad y batería",
+        },
+      },
     },
     {
       titulo: "Service Completo",
       desc: "Incluye cambio de aceite, filtros, bujías y control general del sistema. Dejá tu moto lista para rodar.",
-      img: "https://media.istockphoto.com/id/1188645501/es/foto/mec%C3%A1nico-de-motocicletas.jpg?b=1&s=612x612&w=0&k=20&c=aJuruoRUU8q3ERtYuOiqRWK4m4D0i_9S9rikHPQrS24=",
+      img: {
+        electricoMoto: {
+          src: reparaciones,
+          alt: "electricidad y batería",
+        },
+      },
     },
     {
       titulo: "Electricidad y Batería",
-      desc: "Revisión del sistema eléctrico, carga de batería y reemplazo de componentes defectuosos.",
-      img: "https://media.istockphoto.com/id/1161780173/es/foto/servicio-de-neum%C3%A1ticos-de-una-rueda-de-motocicleta.jpg?b=1&s=612x612&w=0&k=20&c=0bl1ZXhJGCuR63rm7aB5Z15L1MjlRucz3a_pkd605Y8=",
+      desc: "Revisión completa del sistema eléctrico de tu moto, incluyendo diagnóstico y carga de batería, verificación de luces",
+      img: {
+        electricoMoto: {
+          src: electricoMoto,
+          alt: "electricidad y batería",
+        },
+      },
     },
   ];
 
@@ -24,18 +42,18 @@ const ServiciosCards = () => {
       <div className="text-center mb-12">
         <motion.h3
           initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
           className="text-4xl md:text-6xl font-bold titulo text-[#191919] tracking-wide"
         >
           Servicios Destacados
         </motion.h3>
         <motion.p
           initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
           className="text-gray-400 text-base md:text-lg mt-4 max-w-2xl mx-auto leading-relaxed"
         >
           En nuestro taller cuidamos cada detalle de tu moto con servicios
@@ -55,7 +73,7 @@ const ServiciosCards = () => {
           >
             <div className="h-64 overflow-hidden">
               <img
-                src={servicio.img}
+                src={servicio.img.electricoMoto.src}
                 alt={servicio.titulo}
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
               />
@@ -67,8 +85,12 @@ const ServiciosCards = () => {
               <p className="text-gray-600 mb-7 text-sm md:text-base ">
                 {servicio.desc}
               </p>
-              <a href="https://wa.me/5491123456789o" target="blanck" className="bg-[#ff6600]  text-white font-semibold px-6 py-3 rounded-full transition
-               hover:scale-105 hover:shadow-lg">
+              <a
+                href="https://wa.me/5491123456789o"
+                target="blanck"
+                className="bg-[#ff6600]  text-white font-semibold px-6 py-3 rounded-full transition
+               hover:scale-105 hover:shadow-lg"
+              >
                 Consultar presupuesto
               </a>
             </div>
@@ -92,7 +114,11 @@ const ServiciosCards = () => {
             <p className="text-sm md:text-base mb-5">
               Repuestos originales y accesorios para todas las marcas.
             </p>
-            <a href="https://wa.me/5491123456789o" target="blanck" className="bg-white text-black font-semibold px-6 py-3 rounded-full hover:opacity-90 transition">
+            <a
+              href="https://wa.me/5491123456789o"
+              target="blanck"
+              className="bg-white text-black font-semibold px-6 py-3 rounded-full hover:opacity-90 transition"
+            >
               Consultar precios
             </a>
           </div>
@@ -105,7 +131,7 @@ const ServiciosCards = () => {
 
         {/* Card 2 */}
         <motion.div
-           initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
@@ -121,7 +147,11 @@ const ServiciosCards = () => {
               Mantené tu moto al día en menos de 24hs con nuestro servicio
               rápido y garantizado.
             </p>
-            <a href="https://wa.me/5491123456789o" target="blanck" className="bg-[#ff6600] hover:bg-[#e05600] text-white font-semibold px-6 py-3 rounded-full transition">
+            <a
+              href="https://wa.me/5491123456789o"
+              target="blanck"
+              className="bg-[#ff6600] hover:bg-[#e05600] text-white font-semibold px-6 py-3 rounded-full transition"
+            >
               Consultar precios
             </a>
           </div>

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import moto from "../../assets/img/moto.jpeg";
 
 const Testimonios = () => {
   const comentarios = [
@@ -25,11 +26,11 @@ const Testimonios = () => {
   return (
     <div className="relative bg-[#191919] h-auto py-20 overflow-hidden">
       <img
-        src="https://images.pexels.com/photos/207555/pexels-photo-207555.jpeg"
+        src={moto}
         alt="motocicleta"
         className="absolute inset-0 w-full h-full object-cover opacity-40"
       />
-      <div className="absolute inset-0 bg-black/80" />
+      <div className="absolute inset-0 bg-black/60" />
       <div className="relative z-10 text-white container mx-auto px-4 sm:px-6 md:px-15">
         <h2 className="text-3xl md:text-5xl lg:text-7xl font-bold text-center mb-12 titulo tracking-wide">
           Opiniones de nuestros clientes

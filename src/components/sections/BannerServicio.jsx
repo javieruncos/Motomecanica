@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import mecanico from "../../assets/img/mecanicoPage.jpg";
 
 const BannerServicio = () => {
   const servicios = [
@@ -74,7 +75,7 @@ const BannerServicio = () => {
         >
           <div className="rounded-2xl overflow-hidden shadow-2xl">
             <img
-              src="https://media.istockphoto.com/id/2083542243/es/foto/mec%C3%A1nico-revisando-el-motor-de-una-motocicleta-en-un-taller-de-reparaci%C3%B3n.jpg?b=1&s=612x612&w=0&k=20&c=ImiPAgk7AVhKVggmLB6ANPF-lQjJ9L4-kokyV3Jbkj8="
+              src={mecanico}
               alt="mecánico revisando moto"
               className="object-cover w-full h-[500px]"
             />

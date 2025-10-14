@@ -54,7 +54,7 @@ const ServiciosCards = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-gray-400 text-base md:text-lg mt-4 max-w-2xl mx-auto leading-relaxed"
+          className="text-gray-400 text-base md:text-lg mt-4 max-w-2xl mx-auto leading-relaxed px-5"
         >
           En nuestro taller cuidamos cada detalle de tu moto con servicios
           pensados para mantenerla en su mejor rendimiento.

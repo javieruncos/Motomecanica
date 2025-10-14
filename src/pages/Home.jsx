@@ -13,7 +13,7 @@ const Home = () => {
       <section>
         <Portada></Portada>
       </section>
-      <section className="fondo-gradient">
+      <section className="fondo-gradient scroll-smooth scroll-mt-24" id="servicios">
         <Servicios></Servicios>
       </section>
       <section className="fondo-gradient">
@@ -25,7 +25,7 @@ const Home = () => {
       <section className="fondo-gradient">
         <Testimonios></Testimonios>
       </section>
-      <section className="fondo-gradient">
+      <section className="fondo-gradient scroll-smooth scroll-mt-24" id="contacto">
         <Contacto></Contacto>
       </section>
       <section>

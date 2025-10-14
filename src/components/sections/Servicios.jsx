@@ -23,7 +23,7 @@ const Servicios = () => {
   ];
 
   return (
-    <section className="py-20 md:py-28 fondo-gradient">
+    <section className="py-20 md:py-28 fondo-gradient scroll-smooth scroll-mt-24" id="servicios">
       <div className="text-center px-6">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#191919] mb-4 titulo tracking-wide">
           Nuestros Servicios

@@ -38,7 +38,7 @@ const Portada = () => {
           transition={{ duration: 1, delay: 0.4 }}
         >
           <a
-            href="#contacto"
+            href="https://wa.me/5491123456789o" target="blanck"
             className="inline-block  md:text-center bg-orange-600 hover:bg-orange-500 transition-all duration-300 text-white font-semibold py-4 px-10 rounded-full shadow-lg shadow-orange-600/40 uppercase tracking-wider"
           >
             Solicitar presupuesto

@@ -64,13 +64,13 @@ const ServiciosCards = () => {
               <h4 className="text-2xl font-bold titulo text-gray-800 mb-2">
                 {servicio.titulo}
               </h4>
-              <p className="text-gray-600 mb-5 text-sm md:text-base">
+              <p className="text-gray-600 mb-7 text-sm md:text-base ">
                 {servicio.desc}
               </p>
-              <button className="bg-[#ff6600]  text-white font-semibold px-6 py-3 rounded-full transition
+              <a href="https://wa.me/5491123456789o" target="blanck" className="bg-[#ff6600]  text-white font-semibold px-6 py-3 rounded-full transition
                hover:scale-105 hover:shadow-lg">
                 Consultar presupuesto
-              </button>
+              </a>
             </div>
           </motion.div>
         ))}
@@ -78,8 +78,9 @@ const ServiciosCards = () => {
       <div className="container mx-auto mt-20 px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Card 1 */}
         <motion.div
-          initial={{ opacity: 0, x: -60 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.8 }}
           className="bg-[#ff6600] text-white rounded-2xl p-8 flex flex-col lg:flex-row items-center 
           justify-between shadow-xl shadow-black/30 hover:shadow-orange-500/30 transition-all duration-500"
@@ -88,12 +89,12 @@ const ServiciosCards = () => {
             <h5 className="text-3xl font-bold mb-2 titulo">
               Venta de Repuestos
             </h5>
-            <p className="text-sm md:text-base mb-4">
+            <p className="text-sm md:text-base mb-5">
               Repuestos originales y accesorios para todas las marcas.
             </p>
-            <button className="bg-white text-black font-semibold px-6 py-3 rounded-full hover:opacity-90 transition">
+            <a href="https://wa.me/5491123456789o" target="blanck" className="bg-white text-black font-semibold px-6 py-3 rounded-full hover:opacity-90 transition">
               Consultar precios
-            </button>
+            </a>
           </div>
           <img
             src="https://i0.wp.com/www.vectorizando.com/wp-content/uploads/2022/08/Vector-Motorcycle-Spares-Concept-Convertido-847061d9.png?fit=500%2C500&ssl=1"
@@ -104,8 +105,9 @@ const ServiciosCards = () => {
 
         {/* Card 2 */}
         <motion.div
-          initial={{ opacity: 0, x: 60 }}
-          animate={{ opacity: 1, x: 0 }}
+           initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.8 }}
           className="bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] 
            text-white rounded-2xl p-8 flex flex-col lg:flex-row items-center justify-between 
@@ -115,13 +117,13 @@ const ServiciosCards = () => {
             <h5 className="text-3xl font-bold mb-2 text-[#ff6600] titulo">
               Service Express
             </h5>
-            <p className="text-sm md:text-base mb-4">
+            <p className="text-sm md:text-base mb-5">
               Mantené tu moto al día en menos de 24hs con nuestro servicio
               rápido y garantizado.
             </p>
-            <button className="bg-[#ff6600] hover:bg-[#e05600] text-white font-semibold px-6 py-3 rounded-full transition">
+            <a href="https://wa.me/5491123456789o" target="blanck" className="bg-[#ff6600] hover:bg-[#e05600] text-white font-semibold px-6 py-3 rounded-full transition">
               Consultar precios
-            </button>
+            </a>
           </div>
           <img
             src="https://nrmotoco.com/wp-content/uploads/2022/08/RXT-726X-Warrior-Helmet-Left-Front-Angle-Visor-Up-300x300-1.png"

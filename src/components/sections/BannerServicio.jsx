@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const BannerServicio = () => {
-
   const servicios = [
     {
       titulo: "Mecánica General",
@@ -32,8 +31,9 @@ const BannerServicio = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/85 to-transparent"></div>
       <div className="relative container mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-10 px-8 md:px-12 lg:px-20 text-white">
         <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.8 }}
           className="z-10"
         >
@@ -50,10 +50,10 @@ const BannerServicio = () => {
             {servicios.map((item, i) => (
               <motion.div
                 key={i}
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 * i }}
-                className="border-l-4 border-naranja pl-4"
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8 }}
               >
                 <h4 className="text-xl font-semibold text-naranja mb-1">
                   {item.titulo}
@@ -66,8 +66,9 @@ const BannerServicio = () => {
 
         {/* Imagen derecha */}
         <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.8 }}
           className="relative hidden lg:block"
         >

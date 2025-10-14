@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const Contacto = () => {
   return (
-    <div className=" text-white py-20 px-6 md:px-20">
+    <div className=" text-white py-20 px-6 md:px-20 scroll-smooth scroll-mt-24">
       {/* Título */}
       <motion.h2
         className="text-4xl md:text-5xl font-bold text-center mb-16 titulo text-[#191919] tracking-wide"
@@ -18,8 +18,8 @@ const Contacto = () => {
         {/* Tarjeta de información */}
         <motion.div
           className="bg-black/70 backdrop-blur-md p-10 rounded-2xl shadow-lg flex flex-col gap-6"
-          initial={{ opacity: 0, x: -60 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
@@ -57,8 +57,8 @@ const Contacto = () => {
         {/* Formulario de contacto */}
         <motion.div
           className="bg-black/70 backdrop-blur-md p-10 rounded-2xl shadow-lg"
-          initial={{ opacity: 0, x: 60 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >

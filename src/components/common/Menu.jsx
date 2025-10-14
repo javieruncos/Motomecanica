@@ -7,31 +7,41 @@ const Menu = () => {
   // Estado para controlar el modal de registro
   let [isOpen, setIsOpen] = useState(false);
 
+  const handleScroll = (id) => {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({
+      behavior: "smooth", // scroll suave
+      block: "start",     // se alinea al inicio del elemento
+    });
+  }
+};
+
   return (
     <>
       <nav className="text-gray-200 fixed w-full z-30  menu bg-black md:bg-transparent">
         <div className="container mx-auto flex gap-8 items-center p-4">
           <div className="flex-1 flex items-center gap-8">
             {/* Logo */}
-            <a href="#" className="text-xl pb-1 font-bold text-amber-600">
+            <button onClick={() => handleScroll("servicios")} className="text-xl pb-1 font-bold text-amber-600">
               MOTOMECANICA
-            </a>
+            </button>
             {/* Menú desktop */}
             <ul className="hidden md:flex ms-auto gap-6">
               <li>
-                <a href="/" className="hover:text-white">
+                <a href="/" className="hover:text-amber-600">
                   Inicio
                 </a>
               </li>
               <li>
-                <a href="/nosotros" className="hover:text-white">
+                <button onClick={() => handleScroll("servicios")} className="hover:text-amber-600">
                   servicios
-                </a>
+                </button>
               </li>
               <li>
-                <a href="/contacto" className="hover:text-white">
+                <button onClick={() => handleScroll("contacto")} className="hover:text-amber-600">
                   contacto
-                </a>
+                </button>
               </li>
             </ul>
           </div>
@@ -89,13 +99,13 @@ const Menu = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-gray-400">
-                  Caracteristicas
+                <a href="#servicios" className="hover:text-gray-400">
+                  Servicios
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-gray-400">
-                  Videos
+                  Contacto
                 </a>
               </li>
             </motion.ul>

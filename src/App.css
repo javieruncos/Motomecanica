@@ -5,6 +5,8 @@
   background-image: linear-gradient(45deg, #a8acb8, #b6bac6, #f6f9fe, #f6f9fe);
    font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
+  position: relative;
+  scroll-behavior: smooth;
 }
 
 .main {

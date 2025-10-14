@@ -1,0 +1,19 @@
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    width: 100%;
+    color: white;
+     animation: header-scroll linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 200px;
+    transition: 5s ease;
+}
+
+
+@keyframes header-scroll {
+    to{
+        background-color: #191919;
+    }
+}

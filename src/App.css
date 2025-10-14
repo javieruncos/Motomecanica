@@ -1,0 +1,44 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: linear-gradient(45deg, #a8acb8, #b6bac6, #f6f9fe, #f6f9fe);
+   font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.titulo {
+   font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.color-naranja {
+  background-color: #ea5e2d;
+}
+
+.text-naranja {
+  color: #ea5e2d;
+}
+
+.color-celeste {
+  background-color: #afcee2;
+}
+
+.color-gris {
+  background-color: #47596d;
+}
+
+.color-negro {
+  background-color: #424149;
+}
+
+.fondo-gradient {
+  background-image: linear-gradient(45deg, #a8acb8, #b6bac6, #f6f9fe, #f6f9fe);
+}
